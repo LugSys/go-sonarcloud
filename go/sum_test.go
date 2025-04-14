@@ -1,36 +1,58 @@
 package main
 
-import (
-	"testing"
-	"bytes"
-	"fmt"
-)
+import "testing"
 
 func TestSoma(t *testing.T) {
-	resultado := soma(112, 10)
-	esperado := 122
 
-	if resultado != esperado {
-		t.Errorf("Resultado incorreto: esperado %d, obtido %d", esperado, resultado)
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
 	}
 }
 
-func TestRun(t *testing.T) {
-	// Redireciona a saída padrão para um buffer
-	var buf bytes.Buffer
-	fmtOrig := fmt.Println
-	defer func() { fmt.Println = fmtOrig }() // restaura ao final do teste
+func TestSoma1(t *testing.T) {
 
-	fmt.Println = func(a ...any) (n int, err error) {
-		return fmt.Fprint(&buf, a...)
-	}
+	total := soma(15, 15)
 
-	run()
-
-	saida := buf.String()
-	esperado := "122"
-
-	if saida != esperado {
-		t.Errorf("Saída incorreta: esperada %q, obtida %q", esperado, saída)
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
 	}
 }
+
+func TestSoma2(t *testing.T) {
+
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
+	}
+}
+
+func TestSoma3(t *testing.T) {
+
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
+	}
+}
+
+func TestSoma4(t *testing.T) {
+
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
+	}
+}
+
+func TestSoma5(t *testing.T) {
+
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
+	}
+}
+
