@@ -10,14 +10,23 @@ func soma(a int, b int) int {
 	return a + b
 }
 
-func sub(a int, b int) int {
-	return a - b
+func soma1(a int, b int) int {
+	return a + b
 }
 
-func times(a int, b int) int {
-	return a * b
+func soma2(a int, b int) int {
+	return a + b
 }
 
-func sumX(a int, b int) int {
-	return a + b + a
+func soma3(a int, b int) int {
+	return a + b
 }
+
+func soma4(a int, b int) int {
+	return a + b
+}
+
+func soma5(a int, b int) int {
+	return a + b
+}
+
