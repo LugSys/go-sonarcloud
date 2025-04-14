@@ -10,3 +10,8 @@ func TestSoma(t *testing.T) {
 		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
 	}
 }
+
+func TestMain(t *testing.T) {
+	main()
+	fmt.Println("TestMain")	
+}
