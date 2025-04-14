@@ -1,3 +1,1 @@
 ## SonarCloud com GoLang
-
-.
